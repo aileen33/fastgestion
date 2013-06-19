@@ -17,7 +17,7 @@
 		}
 	}
 </script>
-<div class="row-fluid" style="margin-top:-9%;margin-left: 0px">
+<div class="row-fluid" style="margin-left: 0px">
 	<fieldset style="margin-right:200px;" >	<legend><h4>Información de Contacto</h4></legend>
 		<div class= "contact h3 ">
 		<label>
@@ -25,7 +25,7 @@
 		Celular&nbsp&nbsp&nbsp&nbsp&nbsp :90952993<br>   
 		Dirección&nbsp&nbsp  :Melania 10030, El Bosque.</label>	</div>
 		<a href="http://www.mapcity.cl/#t=1:a=CALLE_MELANIA__10030.EL_BOSQUE">
-		<img src="/<?php echo config_item('dir_alias')  ?>/img/mapa.png" alt="mapa" title="Para mayor información haga click en el mapa" width="65%" height="60%">
+		<img src="/<?php echo config_item('dir_alias')  ?>/img/logo_usach.png" alt="mapa" title="Para mayor información haga click en el mapa" width="65%" height="60%">
 	</fieldset>
 </div>
 

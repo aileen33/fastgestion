@@ -27,29 +27,9 @@ class MasterManteka extends CI_Controller {
 	* Se hace una comprobación del usuario si está logueado
 	* 
 	*/
-	protected function cargarTodo($titulo, $cuerpo_a_cargar, $barra_lateral, $datos_cuerpo, $tipos_usuarios_permitidos, 
+	protected function cargarTodo($titulo, $cuerpo_a_cargar, $barra_lateral, $datos_cuerpo, 
 		$subMenuLateralAbierto = '' , $mostrarBarraProgreso = FALSE)
 	{
-		/* Verifica si el usuario que intenta acceder esta autentificado o no. */
-		$rut = $this->session->userdata('rut');
-		$tipo_usuario = $this->session->userdata('tipo_usuario');
-		$id_tipo_usuario = $this->session->userdata('id_tipo_usuario');
-		$datos_plantilla["id_tipo_usuario"] = $id_tipo_usuario;
-		$datos_plantilla["rut_usuario"] = $rut;
-		$datos_plantilla["nombre_usuario"] = $this->session->userdata('nombre_usuario');
-		$datos_plantilla["tipo_usuario"] = $tipo_usuario;
-		if ($rut == FALSE)
-			redirect('/Login/', '');
-		$esValido = FALSE;
-		foreach ($tipos_usuarios_permitidos as $user_permitido) {
-			if ($user_permitido == $id_tipo_usuario) {
-				$esValido = TRUE;
-			}
-		}
-		if (!$esValido) {
-			redirect('/Login/', ''); //Redirijo si el usuario no puede usar esta vista
-		}
-
 		
 		/* Carga en el layout los menús, variables, configuraciones y elementos necesarios para ver las vistas */
 		//Se setea el título de la página.
@@ -90,7 +70,7 @@ class MasterManteka extends CI_Controller {
 
 		//Se carga la barra lateral
 		if($barra_lateral != ''){
-			$datos_plantilla["barra_lateral"] = $this->load->view('templates/barras_laterales/'.$barra_lateral, $datos_plantilla, TRUE);
+		$datos_plantilla["barra_lateral"] = $this->load->view('templates/barras_laterales/'.$barra_lateral, $datos_plantilla, TRUE);
 		}
 		else{
 			$datos_plantilla["barra_lateral"] = '';
@@ -112,7 +92,6 @@ class MasterManteka extends CI_Controller {
 		$rut = $this->session->userdata('rut');
 		$tipo_usuario = $this->session->userdata('tipo_usuario');
 		$id_tipo_usuario = $this->session->userdata('id_tipo_usuario');
-		$datos_plantilla["id_tipo_usuario"] = $id_tipo_usuario;
 		$datos_plantilla["rut_usuario"] = $rut;
 		$datos_plantilla["nombre_usuario"] = $this->session->userdata('nombre_usuario');
 		$datos_plantilla["tipo_usuario"] = $tipo_usuario;
@@ -198,7 +177,6 @@ class MasterManteka extends CI_Controller {
 		$rut = $this->session->userdata('rut');
 		$tipo_usuario = $this->session->userdata('tipo_usuario');
 		$id_tipo_usuario = $this->session->userdata('id_tipo_usuario');
-		$datos_plantilla["id_tipo_usuario"] = $id_tipo_usuario;
 		$datos_plantilla["rut_usuario"] = $rut;
 		$datos_plantilla["nombre_usuario"] = $this->session->userdata('nombre_usuario');
 		$datos_plantilla["tipo_usuario"] = $tipo_usuario;

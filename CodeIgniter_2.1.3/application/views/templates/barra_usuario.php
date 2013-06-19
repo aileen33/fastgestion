@@ -1,7 +1,5 @@
 <!-- Barra superior que contiene el nombre del usuario, el menu, cerrar sesión y botón de ayuda -->
-		<p style="margin-left:20px;">
-			Bienvenido(a) <?php echo $nombre_usuario; ?>
-		</p>
+
 		<div class="btn-group" style="margin-top:-10px; margin-left:20px;">
 			<a class="btn btn-mini" href="<?php echo site_url("Correo/enviarCorreo") ?>" title="Enviar correo">
 				<i class="icon-envelope"></i>
