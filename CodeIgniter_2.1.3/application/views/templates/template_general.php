@@ -6,11 +6,7 @@
 <body>
 	<div id="wrap" style="min-width:1000px;">
 		<div class="row-fluid">
-			<div class="span2">
-				<?php
-					echo $barra_usuario		//	Barra de control de usuario
-				?>
-			</div>
+
 			<div class="span9">
 				<?php
 					echo $menu_superior;	//	Barra con los menúes
