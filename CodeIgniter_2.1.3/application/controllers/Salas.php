@@ -36,11 +36,6 @@ class Salas extends MasterManteka {
 	*/
 	public function verSalas()
 	{
-		//Se comprueba que quien hace esta petición este logueado
-		$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "verSalas"; 
@@ -65,11 +60,6 @@ class Salas extends MasterManteka {
 	*/
 	public function agregarSalas($mensajes_alert = array())
     {
-		//Se comprueba que quien hace esta petición este logueado
-		$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "agregarSalas"; //Para este ejemplo, los informes no tienen submenu lateral
@@ -102,11 +92,6 @@ $tipos_usuarios_permitidos = array();
 	*/
     public function editarSalas()
     {
-		//Se comprueba que quien hace esta petición este logueado
-		$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
     	$datos_vista = 0;		
 		$subMenuLateralAbierto = "editarSalas"; //Para este ejemplo, los informes no tienen submenu lateral
@@ -141,11 +126,6 @@ $tipos_usuarios_permitidos = array();
 	*/
 	 public function borrarSalas()
     {
-		//Se comprueba que quien hace esta petición este logueado
-		$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
     	$datos_vista = 0;		
 		$subMenuLateralAbierto = "borrarSalas"; 

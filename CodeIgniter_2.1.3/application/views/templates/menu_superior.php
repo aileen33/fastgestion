@@ -7,7 +7,7 @@
 <?php
 	//	Si la variable no se ha seteado, se asume operación principal.
 		if (!isset($menuSuperiorAbierto)) {
-			$menuSuperiorAbierto = "Salas";
+			$menuSuperiorAbierto = "Contacto";
 		}
 		
 		$menu1 = "";

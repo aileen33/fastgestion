@@ -38,11 +38,6 @@ class Secciones extends MasterManteka {
 	*/
 	public function verSecciones()
 	{
-		//Se comprueba que quien hace esta petición este logueado
-		$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "verSecciones"; 
@@ -67,11 +62,6 @@ class Secciones extends MasterManteka {
 	*/
 	public function agregarSecciones()
 	{	
-		//Se comprueba que quien hace esta petición este logueado
-		$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "agregarSecciones"; 
@@ -102,11 +92,6 @@ class Secciones extends MasterManteka {
 	*/
     public function editarSecciones()
     {
-	//Se comprueba que quien hace esta petición este logueado
-    	$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "editarSecciones"; 
@@ -135,11 +120,6 @@ class Secciones extends MasterManteka {
 	*/
     public function borrarSecciones()
     {
-		//Se comprueba que quien hace esta petición este logueado
-    	$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "borrarSecciones"; 
@@ -166,13 +146,6 @@ class Secciones extends MasterManteka {
 **/	
 	public function asignarAsecciones()
 	{
-		$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
-
-
-
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "asignarAseccion"; 
 		$muestraBarraProgreso = FALSE; //Indica si se muestra la barra que dice anterior - siguiente
@@ -199,10 +172,6 @@ class Secciones extends MasterManteka {
 
 	public function borrarAsignacion()
 	{
-		$rut = $this->session->userdata('rut'); //Se comprueba si el usuario tiene sesi?n iniciada
-		if ($rut == FALSE) {
-			redirect('/Login/', ''); //Se redirecciona a login si no tiene sesi?n iniciada
-		}
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "borrarAsignar"; 
 		$muestraBarraProgreso = FALSE; //Indica si se muestra la barra que dice anterior - siguiente
@@ -227,11 +196,6 @@ class Secciones extends MasterManteka {
 	**/
 
 	public function postDetalleSeccion() {
-		//Se comprueba que quien hace esta petición de ajax esté logueado
-		if (!$this->isLogged()) {
-			//echo 'No estás logueado!!';
-			return;
-		}
 
 		$cod_seccion = $this->input->post('seccion');
 		$this->load->model('Model_secciones');
@@ -283,12 +247,6 @@ class Secciones extends MasterManteka {
 
 	
 	public function postDetalleModulos() {
-		//Se comprueba que quien hace esta petición de ajax esté logueado
-		if (!$this->isLogged()) {
-			//echo 'No estás logueado!!';
-			return;
-		}
-
 		$nombre_modulo = $this->input->post('nombre_modulo');
 		$this->load->model('Model_secciones');
 		$resultado = $this->Model_secciones->verProfeSegunModulo($nombre_modulo);
@@ -296,12 +254,6 @@ class Secciones extends MasterManteka {
 	}
 
 	public function postDetalleSala() {
-		//Se comprueba que quien hace esta petición de ajax esté logueado
-		if (!$this->isLogged()) {
-			//echo 'No estás logueado!!';
-			return;
-		}
-
 		$sala = $this->input->post('sala');
 		$this->load->model('Model_secciones');
 		$resultado = $this->Model_secciones->verHorarioSegunSala($sala);
