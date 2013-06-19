@@ -4371,11 +4371,13 @@ input[type="submit"].btn.btn-mini {
   *position: relative;
   *z-index: 2;
   margin-bottom: 20px;
+  
   overflow: visible;
 }
 
 .navbar-inner {
   min-height: 40px;
+  
   background-color: #fafafa;
   background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
@@ -4600,7 +4602,7 @@ input[type="submit"].btn.btn-mini {
   position: relative;
   display: block;
   float: left;
-  margin: 10px 10px 0px 0px;
+  margin: 10px 0px 10px 10px;
 }
 
 .navbar .nav.pull-right {
@@ -4614,10 +4616,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 50px 10px;
+  padding: 10px 48px 0px;
   color: white;
   text-decoration: none;
-  text-shadow: 0 1px 0 #ffffff;
 }
 
 .navbar .nav .dropdown-toggle .caret {
@@ -5009,13 +5010,15 @@ input[type="submit"].btn.btn-mini {
 .pagination ul > li > a:focus,
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  background-color: #f5f5f5;
+  color: #FFBF00;
+  text-decoration: none;
 }
 
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  color: #999999;
-  cursor: default;
+	color: #FFBF00;
+  text-decoration: none;
+}
 }
 
 .pagination ul > .disabled > span,
