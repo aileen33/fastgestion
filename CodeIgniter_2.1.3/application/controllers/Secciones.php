@@ -52,7 +52,7 @@ class Secciones extends MasterManteka {
 		$this->load->model('Model_secciones');
 		$cod_seccion = $this->input->post("cod_seccion");
         $datos_vista = array('seccion' =>$this->Model_secciones->VerTodasSecciones(),'rs_estudiantes'=>$this->Model_secciones->VerTodosLosEstudiantes($cod_seccion),'secc' =>$this->Model_secciones->VerSeccion($cod_seccion));
-		$this->cargarTodo("Secciones", 'cuerpo_secciones_ver', "barra_lateral_secciones", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Secciones", 'cuerpo_secciones_ver', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
 	}
 
 	/**
@@ -83,7 +83,7 @@ class Secciones extends MasterManteka {
 		$nombre_seccion2 = $this->input->post("rs_seccion2");
 		$confirmacion = $this->Model_secciones->AgregarSeccion($nombre_seccion1,$nombre_seccion2);
         $datos_vista = array('mensaje_confirmacion'=>$confirmacion);
-		$this->cargarTodo("Secciones", 'cuerpo_secciones_agregar', "barra_lateral_secciones", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Secciones", 'cuerpo_secciones_agregar', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
 
 	}
 
@@ -119,7 +119,7 @@ class Secciones extends MasterManteka {
 		$nombre_seccion2 = $this->input->post("rs_seccion2");
 		$confirmacion = $this->Model_secciones->ActualizarSeccion($cod_seccion,$nombre_seccion1,$nombre_seccion2);
         $datos_vista = array('seccion' =>$this->Model_secciones->VerTodasSecciones(),'mensaje_confirmacion'=>$confirmacion);
-		$this->cargarTodo("Secciones", 'cuerpo_secciones_editar', "barra_lateral_secciones", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Secciones", 'cuerpo_secciones_editar', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
     }
 
 		/**
@@ -151,7 +151,7 @@ class Secciones extends MasterManteka {
 		$cod_seccion1 = $this->input->post("rs_seccion");
 		$confirmacion = $this->Model_secciones->EliminarSeccion($cod_seccion1);
         $datos_vista = array('seccion' =>$this->Model_secciones->VerTodasSecciones(),'rs_estudiantes'=>$this->Model_secciones->VerTodosLosEstudiantes($cod_seccion),'secc' =>$this->Model_secciones->VerSeccion($cod_seccion),'mensaje_confirmacion'=>$confirmacion);
-		$this->cargarTodo("Secciones", 'cuerpo_secciones_borrar', "barra_lateral_secciones", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Secciones", 'cuerpo_secciones_borrar', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
 	}
 
 
@@ -181,7 +181,7 @@ class Secciones extends MasterManteka {
 		$this->load->model('Model_secciones');
 		$cod_seccion = $this->input->post("cod_seccion");
         $datos_vista = array('seccion' =>$this->Model_secciones->VerTodasSecciones(), 'modulos' => $this->Model_secciones->verModulosPorAsignar(), 'salas' => $this->Model_secciones->verSalasPorAsignar());
-		$this->cargarTodo("Secciones", 'cuerpo_secciones_asignar', "barra_lateral_secciones", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Secciones", 'cuerpo_secciones_asignar', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
 
 
 
@@ -212,7 +212,7 @@ class Secciones extends MasterManteka {
 		$this->load->model('Model_secciones');
 		$cod_seccion = $this->input->post("cod_seccion");
         $datos_vista = array('seccion' =>$this->Model_secciones->VerTodasSecciones());
-		$this->cargarTodo("Secciones", 'cuerpo_secciones_eliminarAsignacion', "barra_lateral_secciones", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Secciones", 'cuerpo_secciones_eliminarAsignacion', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
 
 
 

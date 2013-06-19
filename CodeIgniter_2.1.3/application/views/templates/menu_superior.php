@@ -7,40 +7,24 @@
 <?php
 	//	Si la variable no se ha seteado, se asume operación principal.
 		if (!isset($menuSuperiorAbierto)) {
-			$menuSuperiorAbierto = "Correos";
+			$menuSuperiorAbierto = "Salas";
 		}
-		$id_tipo_usuario = TIPO_USR_COORDINADOR; //Se debe borrar cuando todo se porte a MasterManteka
-		// Las operaciones por defecto no poseen clases
-		$Correos = "";
-		$Docentes = "";
-		$Secciones = "";
-		$Planificacion = "";
-		$Salas = "";
-		$Alumnos = "";
-		$Informes = "";
+		
+		$menu1 = "";
+		$menu2 = "";
+		$menu3 = "";
+		
 
 		//	En caso de que tal operación específica este seleccionada.
 		//	La operación seleccionada tiene clase "active"
-		if ($menuSuperiorAbierto == "Correos") {
-			$Correos = 'class="active"';
-		}
-		else if ($menuSuperiorAbierto == "Docentes") {
-			$Docentes = 'class="active"';
+		if ($menuSuperiorAbierto == "Salas") {
+			$menu1 = 'class="active"';
 		}
 		else if ($menuSuperiorAbierto == "Secciones") {
-			$Secciones = 'class="active"';
+			$menu2 = 'class="active"';
 		}
-		else if ($menuSuperiorAbierto == "Planificacion") {
-			$Planificacion = 'class="active"';
-		}
-		else if ($menuSuperiorAbierto == "Salas") {
-			$Salas = 'class="active"';
-		}
-		else if ($menuSuperiorAbierto == "Alumnos") {
-			$Alumnos = 'class="active"';
-		}
-		else if ($menuSuperiorAbierto == "Informes") {
-			$Informes = 'class="active"';
+		else if ($menuSuperiorAbierto == "Contacto") {
+			$menu3 = 'class="active"';
 		}
 
 
@@ -49,29 +33,17 @@
 	<div class="navbar">
 		<div class="navbar-inner" style="margin-left:0px;">
 			<ul class="nav">
-				<li <?php echo $Correos;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Correo/index") ?>">M Correos</a>
+				<li <?php echo $menu1;?> >
+					<a class="btn_with_icon" href="<?php echo site_url("Salas/index") ?>">S Acerca de Fastgestion</a>
 				</li>
-				<li <?php echo $Docentes;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Profesores/index") ?>">L Docencia</a>
+				<li <?php echo $menu2;?> >
+					<a class="btn_with_icon" href="<?php echo site_url("Secciones/index") ?>">K Quiénes somos</a>
 				</li>
-				<li <?php echo $Secciones;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Secciones/index") ?>">K Secciones</a>
+				<li <?php echo $menu3;?> >
+					<a class="btn_with_icon" href="<?php echo site_url("Contacto/index") ?>">M Contáctanos</a>
 				</li>
-				<li <?php echo $Planificacion;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Planificacion/index") ?>">É Planificación</a>
-				</li>
-				<li <?php echo $Salas;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Salas/index") ?>">S Salas</a>
-				</li>
-				<li <?php echo $Alumnos;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Alumnos/index") ?>">Ù Alumnos</a>
-				</li>
-				<?php if ($id_tipo_usuario == TIPO_USR_COORDINADOR) { ?>
-				<li <?php echo $Informes;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Informes/index") ?>">E Informes</a>
-				</li>
-				<?php } ?>
+				
 			</ul>
 		</div>
 	</div>
+	

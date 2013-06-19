@@ -49,7 +49,7 @@ class Salas extends MasterManteka {
 		$tipos_usuarios_permitidos[0] = TIPO_USR_COORDINADOR;
 		$this->load->model('Model_sala');
 		$datos_vista = array('sala' => $this->Model_sala->VerTodasLasSalas(), 'salaImplemento' => $this->Model_sala->VerTodosLosImplementosSala());
-		$this->cargarTodo("Salas", 'cuerpo_salas_ver', "barra_lateral_salas", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Salas", 'cuerpo_salas_ver', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
 	}
 
 	/**
@@ -85,7 +85,7 @@ $tipos_usuarios_permitidos = array();
         $confirmacion = $this->Model_sala->InsertarSala($num_sala,$ubicacion,$capacidad,$implementos);
 	
 		$datos_vista = array('implemento' => $this->Model_sala->VerTodosLosImplementos(),'mensaje_confirmacion'=>$confirmacion);
-		$this->cargarTodo("Salas", 'cuerpo_salas_agregar', "barra_lateral_salas", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Salas", 'cuerpo_salas_agregar', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
 
     }
     
@@ -156,7 +156,7 @@ $tipos_usuarios_permitidos = array();
 		$cod_sala = $this->input->post("codEliminar");
 		$confirmacion = $this->Model_sala->EliminarSala($cod_sala);
 		$datos_vista = array('sala' => $this->Model_sala->VerTodasLasSalas(),'mensaje_confirmacion'=>$confirmacion, 'salaImplemento' => $this->Model_sala->VerTodosLosImplementosSala(),'mensaje_confirmacion'=>$confirmacion);
-		$this->cargarTodo("Salas", 'cuerpo_salas_eliminar', "barra_lateral_salas", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Salas", 'cuerpo_salas_eliminar', "barra_lateral", $datos_vista, $tipos_usuarios_permitidos, $subMenuLateralAbierto, $muestraBarraProgreso);
 
     }
 

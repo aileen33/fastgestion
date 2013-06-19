@@ -32,7 +32,14 @@ class Contacto extends MasterManteka {
 	public function index()
 	{
 	   
-		$this->InfoContacto();
+		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
+		$datos_vista = 0;		
+		$subMenuLateralAbierto = ""; 
+		$muestraBarraProgreso = FALSE; //Indica si se muestra la barra que dice anterior - siguiente
+		$this->load->model('Model_sala');
+		$datos_vista = array('sala' => $this->Model_sala->VerTodasLasSalas(), 'salaImplemento' => $this->Model_sala->VerTodosLosImplementosSala());
+		$this->cargarTodo("Contacto", 'info', "barra_lateral", $datos_vista,  $subMenuLateralAbierto, $muestraBarraProgreso);
+
 	}
 	
 	public function InfoContacto(){
@@ -42,7 +49,7 @@ class Contacto extends MasterManteka {
 		$muestraBarraProgreso = FALSE; //Indica si se muestra la barra que dice anterior - siguiente
 		$this->load->model('Model_sala');
 		$datos_vista = array('sala' => $this->Model_sala->VerTodasLasSalas(), 'salaImplemento' => $this->Model_sala->VerTodosLosImplementosSala());
-		$this->cargarTodo("Contacto", 'info', "barra_lateral_contacto", $datos_vista,  $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Contacto", 'info', "barra_lateral", $datos_vista,  $subMenuLateralAbierto, $muestraBarraProgreso);
 	}
 	public function EnviarConsulta(){
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
@@ -51,7 +58,7 @@ class Contacto extends MasterManteka {
 		$muestraBarraProgreso = FALSE; //Indica si se muestra la barra que dice anterior - siguiente
 		$this->load->model('Model_sala');
 		$datos_vista = array('sala' => $this->Model_sala->VerTodasLasSalas(), 'salaImplemento' => $this->Model_sala->VerTodosLosImplementosSala());
-		$this->cargarTodo("Contacto", 'contacto', "barra_lateral_contacto", $datos_vista,  $subMenuLateralAbierto, $muestraBarraProgreso);
+		$this->cargarTodo("Contacto", 'contacto', "barra_lateral", $datos_vista,  $subMenuLateralAbierto, $muestraBarraProgreso);
 	}
 }
 
