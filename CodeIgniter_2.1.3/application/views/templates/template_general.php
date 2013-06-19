@@ -4,7 +4,7 @@
 		echo $head						//	Esta variable es pasada como parámetro a esta vista
 	?>
 <body>
-	<div id="wrap" style="min-width:1000px;">
+	<div id="wrap" style="min-width:100%">
 		<div class="row-fluid">
 
 			<div class="span9">
