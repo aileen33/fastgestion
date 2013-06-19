@@ -4376,8 +4376,6 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inner {
   min-height: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
   background-color: #fafafa;
   background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
@@ -4600,10 +4598,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav {
   position: relative;
-  left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 10px 10px 0px 0px;
 }
 
 .navbar .nav.pull-right {
@@ -4617,7 +4614,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 15px 10px;
+  padding: 10px 50px 10px;
   color: white;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
