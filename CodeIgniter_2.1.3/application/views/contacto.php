@@ -3,7 +3,7 @@ if (!isset($_POST['email'])) {
 ?>
   <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
   
-	<fieldset style="margin-right:300px;" ><legend><h4>Envíar consulta</h4></legend>
+	<fieldset style="margin-right:300px;" >
 				<div class="row-fluid">
 					<div class="span6">
 						<font color="red">*Campos Obligatorios</font>

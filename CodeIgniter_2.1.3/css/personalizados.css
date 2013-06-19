@@ -84,6 +84,7 @@ footer {
 	margin-left:2%;
 	margin-right:18%;
 	text-align: left;
+	
 }
 
 .icon_footer {
@@ -144,4 +145,5 @@ font-family: 'MyWebFont';
 
 html,body{
     height: 96%;
+	background-color: #4388cc;
 }
