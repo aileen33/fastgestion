@@ -5,9 +5,6 @@
 	?>
 <body>
 	<div id="wrap" style="min-width:1000px;">
-		<?php
-			echo $banner_portada;	//	Banner del sitio Web
-		?>
 		<div class="row-fluid">
 			<div class="span2">
 				<?php
@@ -43,19 +40,7 @@
 					
 					<!-- Barra de navegación con botones undo-redo -->
 					<div style="min-height: 310px" class="undoable">
-						<?php
-							//	Se asume por defecto que la barra de undo-redo se carga
-							//	Si la variable no ha sido seteada, se muestra la barra de navegación
-							if (!isset($mostrarBarra_navegacion)) {
-								echo $barra_navegacion;
-							}
-							//	Si la variable está seteada en TRUE, cargar la barra undo-redo
-							else if ($mostrarBarra_navegacion == TRUE){
-								echo $barra_navegacion;
-							}
-							//	Si no está entonces no se carga la barra
-						?>
-						
+	
 						<!--	Body content									-->
 						<!--	Cuerpo central de la operación (de la vista)	-->
 						<?php

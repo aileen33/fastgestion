@@ -51,10 +51,11 @@
 }
 
 .navbar-inner{
-	width: 775px;
+	width: 939px;
 	margin-left: auto;
 	margin-right: auto;
-	  background-image: url("../img/barrasuperior.png");
+	background-image: url("../img/barrasuperior.png");
+	height: 83px;
 }
 
 .navbar.barra_usuario {
