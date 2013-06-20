@@ -79,7 +79,9 @@ footer {
 	margin-top: -20px;
 	font-size: 10px;
 	height: 20px;
-	text-align: center;
+	margin-left:18%;
+	margin-right:18%;
+	text-align: left;
 }
 
 .icon_footer {

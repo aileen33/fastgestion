@@ -26,7 +26,8 @@
 		Dirección&nbsp&nbsp  :Melania 10030, El Bosque.</label>	</div>
 		<a href="http://www.mapcity.cl/#t=1:a=CALLE_MELANIA__10030.EL_BOSQUE">
 		<img src="/<?php echo config_item('dir_alias')  ?>/img/logo_usach.png" alt="mapa" title="Para mayor información haga click en el mapa" width="65%" height="60%">
-	</fieldset>
+		</a>
+		</fieldset>
 </div>
 
 
