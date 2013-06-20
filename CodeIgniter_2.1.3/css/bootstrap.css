@@ -97,7 +97,9 @@ sup {
 sub {
   bottom: -0.25em;
 }
-
+.top{
+ margin-top:-300px;
+}
 img {
   width: auto\9;
   height: auto;
@@ -4619,7 +4621,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 48px 0px;
+  padding: 10px 45px 0px;
   color: white;
   text-decoration: none;
 }
@@ -4639,7 +4641,6 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
   color: #FFBF00;
-  font-weight:bold;
   text-decoration: none;
   background-color: transparent;
 }

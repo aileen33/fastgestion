@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "Contacto";
+$route['default_controller'] = "Acerca";
 $route['404_override'] = 'Otros/NotFound';
 
 

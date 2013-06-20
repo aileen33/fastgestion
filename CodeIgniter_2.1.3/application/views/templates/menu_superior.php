@@ -7,7 +7,7 @@
 <?php
 	//	Si la variable no se ha seteado, se asume operación principal.
 		if (!isset($menuSuperiorAbierto)) {
-			$menuSuperiorAbierto = "Contacto";
+			$menuSuperiorAbierto = "Acerca";
 		}
 		
 		$menu1 = "";
@@ -17,7 +17,7 @@
 
 		//	En caso de que tal operación específica este seleccionada.
 		//	La operación seleccionada tiene clase "active"
-		if ($menuSuperiorAbierto == "Salas") {
+		if ($menuSuperiorAbierto == "Acerca") {
 			$menu1 = 'class="active"';
 		}
 		else if ($menuSuperiorAbierto == "Secciones") {
@@ -38,13 +38,13 @@
 					<font size=6 color=white> FastGestion </font>
 				</li>
 				<li <?php echo $menu1;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Salas/index") ?>">S Acerca de Fastgestion</a>
+					<a class="btn_with_icon" href="<?php echo site_url("Acerca/AcercaDeFastGestion") ?>">S Acerca de Fastgestion</a>
 				</li>
 				<li <?php echo $menu2;?> >
 					<a class="btn_with_icon" href="<?php echo site_url("Secciones/index") ?>">K Quiénes somos</a>
 				</li>
 				<li <?php echo $menu3;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Contacto/EnviarConsulta") ?>">M Contáctanos</a>
+					<a class="btn_with_icon" href="<?php echo site_url("Contacto/EnviarConsulta") ?>">&nbspM Contáctanos</a>
 				</li>
 				
 			</ul>
