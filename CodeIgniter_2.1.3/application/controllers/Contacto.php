@@ -29,19 +29,7 @@ class Contacto extends MasterManteka {
 	* Función principal del controlador User, es llamado para mostrar la vista de gestión
 	* de la cuenta de usuario
 	*/
-	public function index()
-	{
-	   
-		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
-		$datos_vista = 0;		
-		$subMenuLateralAbierto = ""; 
-		$muestraBarraProgreso = FALSE; //Indica si se muestra la barra que dice anterior - siguiente
-		$this->load->model('Model_sala');
-		$datos_vista = array('sala' => $this->Model_sala->VerTodasLasSalas(), 'salaImplemento' => $this->Model_sala->VerTodosLosImplementosSala());
-		$this->cargarTodo("Contacto", 'info', "barra_lateral", $datos_vista,  $subMenuLateralAbierto, $muestraBarraProgreso);
 
-	}
-	
 	public function InfoContacto(){
 		// se carga el modelo, los datos de la vista, las funciones a utilizar del modelo
 		$datos_vista = 0;		

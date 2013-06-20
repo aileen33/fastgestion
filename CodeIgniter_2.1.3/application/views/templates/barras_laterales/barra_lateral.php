@@ -7,7 +7,7 @@
 
 		//	Si la variable no se ha seteado, se asume operación principal.
 		if (!isset($subVistaLateralAbierta)) {
-			$subVistaLateralAbierta = "InfoContacto";
+			$subVistaLateralAbierta = "menu1";
 		}
 
 		// Las operaciones por defecto no poseen clases
@@ -22,25 +22,25 @@
 
 		//	En caso de que tal operación específica este seleccionada.
 		//	La operación seleccionada tiene clase "active"
-		if ($subVistaLateralAbierta == "InfoContacto") {
+		if ($subVistaLateralAbierta == "menu1") {
 			$menu1 = 'class="active"';
 		}
-		else if ($subVistaLateralAbierta == "EnviarConsulta") {
+		else if ($subVistaLateralAbierta == "menu2") {
 			$menu2 = 'class="active"';
 		}
-		else if ($subVistaLateralAbierta == "verAlumnos") {
+		else if ($subVistaLateralAbierta == "menu3") {
 			$menu3 = 'class="active"';
 		}
-		else if ($subVistaLateralAbierta == "verSalas") {
+		else if ($subVistaLateralAbierta == "menu4") {
 			$menu4 = 'class="active"';
 		}
-		else if ($subVistaLateralAbierta == "agregarAlumnos") {
+		else if ($subVistaLateralAbierta == "menu5") {
 			$menu5 = 'class="active"';
 		}
-		else if ($subVistaLateralAbierta == "agregarSalas") {
+		else if ($subVistaLateralAbierta == "menu6") {
 			$menu6 = 'class="active"';
 		}
-		else if ($subVistaLateralAbierta == "editarAlumnos") {
+		else if ($subVistaLateralAbierta == "menu7") {
 			$menu7 = 'class="active"';
 		}
 	?>
@@ -54,13 +54,13 @@
 		    </div>
 		    <div id="collapseOne" class="accordion-body collapse in">
 		    	<div class="accordion-inner nav nav-list">
-						<li <?php echo $menu1; ?> ><a href="<?php echo site_url("Contacto/InfoContacto")?>">Asesoría en Contabilidad</a></li>
-						<li <?php echo $menu2; ?> ><a href="<?php echo site_url("Contacto/EnviarConsulta")?>">Asesoría Laboral y Remuneraciones</a></li>
-						<li <?php echo $menu3; ?> ><a href="<?php echo site_url("Alumnos/verAlumnos")?>">Asesoría Legal Administrativa</a></li>
-						<li <?php echo $menu4; ?> ><a href="<?php echo site_url("Salas/verSalas")?>">Asesoría Tributaria</a></li>
-						<li <?php echo $menu5; ?> ><a href="<?php echo site_url("Alumnos/agregarAlumnos")?>">Auditoria en Edificios y Condominios</a></li>
-						<li <?php echo $menu6; ?> ><a href="<?php echo site_url("Salas/agregarSalas")?>">Auditoria para Apoyo al Control Interno</a></li>
-						<li <?php echo $menu7; ?> ><a href="<?php echo site_url("Alumnos/editarAlumnos")?>">Capacitación</a></li>
+						<li <?php echo $menu1; ?> ><a href="<?php echo site_url("Menu/menu1")?>">Asesoría en Contabilidad</a></li>
+						<li <?php echo $menu2; ?> ><a href="<?php echo site_url("Menu/menu2")?>">Asesoría Laboral y Remuneraciones</a></li>
+						<li <?php echo $menu3; ?> ><a href="<?php echo site_url("Menu/menu3")?>">Asesoría Legal Administrativa</a></li>
+						<li <?php echo $menu4; ?> ><a href="<?php echo site_url("Menu/menu4")?>">Asesoría Tributaria</a></li>
+						<li <?php echo $menu5; ?> ><a href="<?php echo site_url("Menu/menu5")?>">Auditoria en Edificios y Condominios</a></li>
+						<li <?php echo $menu6; ?> ><a href="<?php echo site_url("Menu/menu6")?>">Auditoria para Apoyo al Control Interno</a></li>
+						<li <?php echo $menu7; ?> ><a href="<?php echo site_url("Menu/menu7")?>">Capacitación</a></li>
 		     		
 		     	</div>
 		    </div>

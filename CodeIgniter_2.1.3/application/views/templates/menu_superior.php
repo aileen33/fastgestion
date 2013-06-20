@@ -35,7 +35,7 @@
 			<ul class="nav" >
 				<li  style="margin-top:-8px">
 					<img src="/<?php echo config_item('dir_alias') ?>/img/logo_usach.png" class="logo_banner" alt="logo usach">
-					<font size=6 color=white> Fastgestion </font>
+					<font size=6 color=white> FastGestion </font>
 				</li>
 				<li <?php echo $menu1;?> >
 					<a class="btn_with_icon" href="<?php echo site_url("Salas/index") ?>">S Acerca de Fastgestion</a>
@@ -44,7 +44,7 @@
 					<a class="btn_with_icon" href="<?php echo site_url("Secciones/index") ?>">K Quiénes somos</a>
 				</li>
 				<li <?php echo $menu3;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Contacto/index") ?>">M Contáctanos</a>
+					<a class="btn_with_icon" href="<?php echo site_url("Contacto/infoContacto") ?>">M Contáctanos</a>
 				</li>
 				
 			</ul>
