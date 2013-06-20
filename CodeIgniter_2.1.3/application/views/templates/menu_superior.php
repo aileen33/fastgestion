@@ -44,7 +44,7 @@
 					<a class="btn_with_icon" href="<?php echo site_url("Secciones/index") ?>">K Quiénes somos</a>
 				</li>
 				<li <?php echo $menu3;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Contacto/infoContacto") ?>">M Contáctanos</a>
+					<a class="btn_with_icon" href="<?php echo site_url("Contacto/EnviarConsulta") ?>">M Contáctanos</a>
 				</li>
 				
 			</ul>
