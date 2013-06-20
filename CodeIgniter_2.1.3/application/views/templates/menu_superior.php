@@ -31,8 +31,12 @@
 ?>
 
 	<div class="navbar">
-		<div class="navbar-inner" style="margin-left:0px;">
-			<ul class="nav">
+		<div class="navbar-inner">
+			<ul class="nav" >
+				<li  style="margin-top:-8px">
+					<img src="/<?php echo config_item('dir_alias') ?>/img/logo_usach.png" class="logo_banner" alt="logo usach">
+					<font size=6 color=white> Fastgestion </font>
+				</li>
 				<li <?php echo $menu1;?> >
 					<a class="btn_with_icon" href="<?php echo site_url("Salas/index") ?>">S Acerca de Fastgestion</a>
 				</li>
