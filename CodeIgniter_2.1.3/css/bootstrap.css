@@ -3960,7 +3960,8 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  color: black;
+  background-color:white;
 }
 
 .nav > li > a > img {
@@ -4012,6 +4013,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:hover,
 .nav-list > .active > a:focus {
   color: #FFBF00;
+  font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -4638,7 +4640,7 @@ input[type="submit"].btn.btn-mini {
   color: #FFBF00;
   font-weight:bold;
   text-decoration: none;
-  
+  background-color: transparent;
 }
 
 .navbar .btn-navbar {
@@ -5018,6 +5020,7 @@ input[type="submit"].btn.btn-mini {
 .pagination ul > .active > span {
 	color: #FFBF00;
   text-decoration: none;
+  
 }
 }
 
