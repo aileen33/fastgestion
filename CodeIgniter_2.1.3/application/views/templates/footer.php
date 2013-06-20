@@ -1,6 +1,6 @@
 <!-- Contiene información del pie de la página -->
-<footer class="footer" id="footer" align="left" style="min-width:820px;">
-	<h6>
+<footer class="footer" id="footer" align="left" style="min-width:100%; ">
+	<h6  style="color:white; background: -webkit-linear-gradient(bottom, #19191F 0%, #8F8F8F 100%);">
 	FastGestion &copy; 2013 - Santiago - Concepción - Chile Todos los Derechos Reservados.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
