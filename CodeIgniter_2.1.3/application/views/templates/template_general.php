@@ -28,24 +28,26 @@
 						<div id="wowslider-container1">
 							<div class="ws_images">
 								<ul>
-									<li><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/auditoria_condominios.jpg" alt="AUDITORIA CONDOMINIOS" title="AUDITORIA CONDOMINIOS" id="wows1_0"/></li>
-									<li><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/auditoria_financiera.jpg" alt="AUDITORIA FINANCIERA" title="AUDITORIA FINANCIERA" id="wows1_1"/></li>
-									<li><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/capacitacion.jpg" alt="capacitacion" title="capacitacion" id="wows1_2"/></li>
-									<li><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/contabilidad.jpg" alt="CONTABILIDAD" title="CONTABILIDAD" id="wows1_3"/></li>
-									<li><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/laboral.jpg" alt="LABORAL" title="LABORAL" id="wows1_4"/></li>
-									<li><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/legal.jpg" alt="LEGAL" title="LEGAL" id="wows1_5"/></li>
-									<li><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/tributaria.jpg" alt="tributaria" title="tributaria" id="wows1_6"/></li>
+									<li><a href="<?php echo site_url("Menu/menu1")?>"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/contabilidad.jpg" alt="ASESORIACONTABILIDAD" title="Asesoría en Contabilidad" id="wows1_0"/></a></li>
+									<li><a href="<?php echo site_url("Menu/menu2")?>"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/laboral.jpg" alt="ASESORIALABORAL" title="Asesoría Laboral y Remuneraciones" id="wows1_1"/></a></li>
+									<li><a href="<?php echo site_url("Menu/menu3")?>"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/legal.jpg" alt="ASESORIALEGAL" title="Asesoría Legal Administrativa" id="wows1_2"/></a></li>
+									<li><a href="<?php echo site_url("Menu/menu4")?>"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/tributaria.jpg" alt="ASESORIATRIBUTARIA" title="Asesoría Tributaria" id="wows1_3"/></a></li>
+									<li><a href="<?php echo site_url("Menu/menu5")?>"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/auditoria_condominios.jpg" alt="AUDITORIAEN EDIFICIOS Y CONDOMINIOS" title="Auditoría en Edificios y Condominios" id="wows1_4"/></a></li>
+									<li><a href="<?php echo site_url("Menu/menu6")?>"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/auditoria_financiera.jpg" alt="AUDITORIAPARAAPOYO" title="Auditoría para Apoyo al Control Interno" id="wows1_5"/></a></li>
+									<li><a href="<?php echo site_url("Menu/menu7")?>"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider/capacitacion.jpg" alt="CAPACITACION" title="Capacitación" id="wows1_6"/></a></li>
+
 								</ul>
 							</div>
 								<div class="ws_bullets">
 									<div>
-										<a href="#" title="AUDITORIA CONDOMINIOS"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/auditoria_condominios.jpg" alt="AUDITORIA CONDOMINIOS"/>1</a>
-										<a href="#" title="AUDITORIA FINANCIERA"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/auditoria_financiera.jpg" alt="AUDITORIA FINANCIERA"/>2</a>
-										<a href="#" title="capacitacion"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/capacitacion.jpg" alt="capacitacion"/>3</a>
-										<a href="#" title="CONTABILIDAD"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/contabilidad.jpg" alt="CONTABILIDAD"/>4</a>
-										<a href="#" title="LABORAL"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/laboral.jpg" alt="LABORAL"/>5</a>
-										<a href="#" title="LEGAL"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/legal.jpg" alt="LEGAL"/>6</a>
-										<a href="#" title="tributaria"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/tributaria.jpg" alt="tributaria"/>7</a>
+										<a href="#" title="Asesoría Laboral y Remuneraciones" ><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/contabilidad.jpg" alt="CONTABILIDAD"/>1</a>
+										<a href="#" title="Asesoría Laboral y Remuneraciones"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/laboral.jpg" alt="LABORAL"/>2</a>
+										<a href="#" title="Asesoría Legal Administrativa"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/legal.jpg" alt="LEGAL"/>3</a>
+										<a href="#" title="Asesoría Tributaria"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/tributaria.jpg" alt="TRIBUTARIA"/>4</a>
+										<a href="#" title="Auditoría en Edificios y Condominios"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/auditoria_condominios.jpg" alt="AUDITORIA CONDOMINIOS"/>5</a>
+										<a href="#" title="Auditoría para Apoyo al Control Interno" ><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/auditoria_financiera.jpg" alt="AUDITORIA APOYO"/>6</a>
+										<a href="#" title="Capacitación"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/capacitacion.jpg" alt="CAPACITACION"/>7</a>
+
 									</div>
 								</div>
 							<div class="ws_shadow"></div>
