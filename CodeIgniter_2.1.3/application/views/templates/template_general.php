@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="icon" type="image/png" href="/<?php echo config_item('dir_alias') ?>/img/img-slider1/auditoria_condominios.jpg" >
+<title>FastGestion</title>
 	<?php
 		echo $head						//	Esta variable es pasada como parámetro a esta vista
 	?>

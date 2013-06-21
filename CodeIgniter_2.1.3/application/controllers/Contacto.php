@@ -36,8 +36,6 @@ class Contacto extends MasterManteka {
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "EnviarConsulta"; 
 		$muestraBarraProgreso = FALSE; //Indica si se muestra la barra que dice anterior - siguiente
-		$this->load->model('Model_sala');
-		$datos_vista = array('sala' => $this->Model_sala->VerTodasLasSalas(), 'salaImplemento' => $this->Model_sala->VerTodosLosImplementosSala());
 		$this->cargarTodo("Contacto", 'contacto', "barra_lateral", $datos_vista,  $subMenuLateralAbierto, $muestraBarraProgreso);
 	}
 	public function InfoContacto(){
@@ -45,8 +43,6 @@ class Contacto extends MasterManteka {
 		$datos_vista = 0;		
 		$subMenuLateralAbierto = "InfoContacto"; 
 		$muestraBarraProgreso = FALSE; //Indica si se muestra la barra que dice anterior - siguiente
-		$this->load->model('Model_sala');
-		$datos_vista = array('sala' => $this->Model_sala->VerTodasLasSalas(), 'salaImplemento' => $this->Model_sala->VerTodosLosImplementosSala());
 		$this->cargarTodo("Contacto", 'info', "barra_lateral", $datos_vista,  $subMenuLateralAbierto, $muestraBarraProgreso);
 	}
 }
