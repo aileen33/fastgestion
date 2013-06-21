@@ -22,7 +22,7 @@ Usted desea tener estados financieros que reflejen con exactitud la realidad de 
 <img src="/<?php echo config_item('dir_alias')  ?>/img/mensaje.png" alt="contacto" >
 </div>
 <div class="span10">Para sus requerimientos escribanos a nuestro correo <a> contacto@fastgestion.cl</a> o déjenos su requerimiento en el link 
-<a href="http://localhost/fastgestion/index.php/Contacto/contacto"><ins>Contacto</ins></a> y nosotros nos comunicaremos con usted.
+<a href="http://localhost/fastgestion/index.php/Contacto/EnviarConsulta"><ins>Contacto</ins></a> y nosotros nos comunicaremos con usted.
 </div>
 </p></fieldset>
 
