@@ -72,8 +72,8 @@
 				Sitios de Interés</a>
 		    </div>
 			
-		    <div id="collapseTwo" class="accordion-body collapse in">
-				<div class="accordion-inner nav nav-list">
+		    <div id="collapseTwo" class="accordion-body collapse in" >
+				<div class="accordion-inner nav nav-list" style="background-color:white">
 					<a href="http://home.sii.cl/"  target="_blank">
 						<img src="/<?php echo config_item('dir_alias') ?>/img/logosii.png" height="150px" width="150px" alt="logo sii" title="Servicio de Impuestos Internos">
 					</a>
