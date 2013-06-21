@@ -68,11 +68,11 @@
 			<br>
 		<div class="accordion-group">
 		    <div class="accordion-heading">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
 				Sitios de Interés</a>
 		    </div>
 			
-		    <div id="collapseTwo">
+		    <div id="collapseTwo" class="accordion-body collapse in">
 				<div class="accordion-inner nav nav-list">
 					<a href="http://home.sii.cl/"  target="_blank">
 						<img src="/<?php echo config_item('dir_alias') ?>/img/logosii.png" height="150px" width="150px" alt="logo sii" title="Servicio de Impuestos Internos">
