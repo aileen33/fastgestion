@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" href="/<?php echo config_item('dir_alias') ?>/img/img-slider1/auditoria_condominios.jpg" >
+<link rel="icon" type="image/png" href="/<?php echo config_item('dir_alias') ?>/img/cont.jpg" >
 <title>FastGestion</title>
 	<?php
 		echo $head						//	Esta variable es pasada como parámetro a esta vista
@@ -42,7 +42,7 @@
 							</div>
 								<div class="ws_bullets">
 									<div>
-										<a href="#" title="Asesoría Laboral y Remuneraciones" ><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/contabilidad.jpg" alt="CONTABILIDAD"/>1</a>
+										<a href="#" title="Asesoría en Contabilidad" ><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/contabilidad.jpg" alt="CONTABILIDAD"/>1</a>
 										<a href="#" title="Asesoría Laboral y Remuneraciones"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/laboral.jpg" alt="LABORAL"/>2</a>
 										<a href="#" title="Asesoría Legal Administrativa"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/legal.jpg" alt="LEGAL"/>3</a>
 										<a href="#" title="Asesoría Tributaria"><img src="/<?php echo config_item('dir_alias') ?>/img/img-slider1/tributaria.jpg" alt="TRIBUTARIA"/>4</a>
