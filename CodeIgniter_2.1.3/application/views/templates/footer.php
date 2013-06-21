@@ -8,7 +8,7 @@
 	background: -webkit-linear-gradient(bottom, #19191F 0%, #8F8F8F 100%);
 	background: linear-gradient(to bottom right, #19191F 0%, #8F8F8F 100%);
 	">
-	FastGestion &copy; 2013 - Santiago - Concepción - Chile Todos los Derechos Reservados.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	FastGestion &copy; 2013 - Santiago - Concepción, Chile. Todos los Derechos Reservados.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	Siguemos en:   
