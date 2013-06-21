@@ -65,4 +65,34 @@
 		     	</div>
 		    </div>
 	  	</div>
+			<br>
+		<div class="accordion-group">
+		    <div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+				Sitios de Interés</a>
+		    </div>
+			
+		    <div id="collapseTwo">
+				<div class="accordion-inner nav nav-list">
+					<a href="http://home.sii.cl/"  target="_blank">
+						<img src="/<?php echo config_item('dir_alias') ?>/img/logosii.png" height="150px" width="150px" alt="logo sii" title="Servicio de Impuestos Internos">
+					</a>
+					<br>
+					<br>
+					<a href="https://www.dt.gob.cl"  target="_blank">
+						<img src="/<?php echo config_item('dir_alias') ?>/img/logodtgob.png"  height="150px" width="150px" alt="logo dtgob" title="Dirección del Trabajo">
+					</a>
+					<br>
+					<br>
+					<a href="http://www.svs.cl/‎‎"  target="_blank">
+						<img src="/<?php echo config_item('dir_alias') ?>/img/logosvs.png"  height="150px" width="150px" alt="logo twitter" title="Superintendencia de Valores y Seguros">
+					</a>
+					<br>
+					<br>
+					<a href="http://www.tesoreria.cl/"  target="_blank">
+						<img src="/<?php echo config_item('dir_alias') ?>/img/logotesoreria.png"  height="150px" width="150px" alt="logo Tesorería" title="Tesorería General de la República">
+					</a>
+				</div>
+		    </div>
+	  	</div>
 	</div>
