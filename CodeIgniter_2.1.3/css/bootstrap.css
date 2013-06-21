@@ -5965,8 +5965,9 @@ a.badge:focus {
 
 .accordion-heading .accordion-toggle {
   display: block;
-  background-color: #FFBF00;;
-  color:white;
+  background-color: #FFBF00;
+  font-weight:bold;
+  color:black;
   padding: 8px 15px;
 }
 
