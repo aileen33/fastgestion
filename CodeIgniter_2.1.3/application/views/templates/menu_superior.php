@@ -41,10 +41,10 @@
 					<a class="btn_with_icon" href="<?php echo site_url("Acerca/AcercaDeFastGestion") ?>">S Acerca de Fastgestion</a>
 				</li>
 				<li <?php echo $menu2;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Acerca/AcercaDeFastGestion") ?>">K Quiénes somos</a>
+					<a class="btn_with_icon" href="<?php echo site_url("Acerca/AcercaDeFastGestion") ?>">K Quiénes somos </a>
 				</li>
 				<li <?php echo $menu3;?> >
-					<a class="btn_with_icon" href="<?php echo site_url("Contacto/EnviarConsulta") ?>">&nbspM Contáctanos</a>
+					<a class="btn_with_icon" href="<?php echo site_url("Contacto/EnviarConsulta") ?>">M Contáctanos</a>
 				</li>
 				
 			</ul>

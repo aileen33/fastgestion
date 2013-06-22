@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'manteka_user';
-$db['default']['password'] = 'manteka_IHC2013-1';
-$db['default']['database'] = 'manteka_db';
+$db['default']['username'] = 'fastgestion_user';
+$db['default']['password'] = 'fastgestion_IHC2013-1';
+$db['default']['database'] = 'fastgestion_db';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
