@@ -54,10 +54,12 @@
 								</div>
 							<div class="ws_shadow"></div>
 						</div>
-						<script type="text/javascript" src="/<?php echo config_item('dir_alias') ?>/javascripts/wowslider1.js"></script>
-						<script type="text/javascript" src="/<?php echo config_item('dir_alias') ?>/javascripts/script1.js"></script>
+						<script type="text/javascript" src="/<?php echo config_item('dir_alias') ?>/javascripts/wowslider.js"></script>
+						<script type="text/javascript" src="/<?php echo config_item('dir_alias') ?>/javascripts/script.js"></script>
 							<!-- End WOWSlider.com BODY section -->
-
+						<br>
+						<br>
+						<br>
 						<!--	Body content									-->
 						<!--	Cuerpo central de la operación (de la vista)	-->
 						<?php

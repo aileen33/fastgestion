@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/<?php echo config_item('dir_alias') ?>/css/ant-sig.css" type="text/css" media="all" />
     <link rel="stylesheet" href="/<?php echo config_item('dir_alias') ?>/css/faq.css" type="text/css" media="all" />
 	<!-- Start WOWSlider.com HEAD section -->
-	<script type="text/javascript" src="/<?php echo config_item('dir_alias') ?>/javascripts/jquery1.js"></script>
+	<script type="text/javascript" src="/<?php echo config_item('dir_alias') ?>/javascripts/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section -->
 	<script src="/<?php echo config_item('dir_alias') ?>/javascripts/jquery.js"></script>
     <script src="/<?php echo config_item('dir_alias') ?>/javascripts/faq.js"></script>
