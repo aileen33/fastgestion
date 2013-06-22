@@ -12,14 +12,15 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	Siguemos en:   
+	
 	<a href="https://www.facebook.com/juan.dvil"  target="_blank">
-		<img src="/<?php echo config_item('dir_alias') ?>/img/facebook.png" height="50px" width="50px" alt="logo facebook" title="Síguenos en Facebook">
+		<img class="icon_f" src="/<?php echo config_item('dir_alias') ?>/img/facebook.png"alt="logo facebook" title="Síguenos en Facebook">
 	</a>
 	<a href="https://twitter.com/coldplay‎"  target="_blank">
-		<img src="/<?php echo config_item('dir_alias') ?>/img/twitter.png"  height="50px" width="50px" alt="logo twitter" title="Síguenos en Twitter">
+		<img class="icon_f" src="/<?php echo config_item('dir_alias') ?>/img/twitter.png"  height="50px" width="50px" alt="logo twitter" title="Síguenos en Twitter">
 	</a>
 	<a href="https://www.linkedin.com/company/chilectra‎‎"  target="_blank">
-		<img src="/<?php echo config_item('dir_alias') ?>/img/linkedin.png"  height="50px" width="50px" alt="logo twitter" title="Síguenos en LinkedIn">
+		<img class="icon_f" src="/<?php echo config_item('dir_alias') ?>/img/linkedin.png"  height="50px" width="50px" alt="logo twitter" title="Síguenos en LinkedIn">
 	</a>
 	
 	
